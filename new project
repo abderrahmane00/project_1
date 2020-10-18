@@ -1,0 +1,44 @@
+<?php
+
+if (isset($_POST["lessons"])){
+$var=$_POST["lessons"];
+}
+else {
+$var=array("yousef","brksolo","hamifreeman","abderrahmane","wigglle14","kamel","mesha");
+}
+
+$var3=6;
+$var2="<html>
+<head></head>
+<body><h1>hello froom my love php.com</h1>
+<form action='http://localhost/favicon.php' method = 'POST'>
+   <input type='text' name='name'>your name here</input> <br />
+       <b> what language do you love ?</b><br>
+          <select name='language[]' size='10' multiple>
+            <option value='php'>  PHP</option>
+            <option value='c++'> C++</option>
+            <option value='paython'> paython</option>
+          <option value='abderrahmane'> abderrahmane</option>
+          <option value='yousef'> yousef</option>
+          <option value='brksolo'> brksolo</option>
+          <option value='hamifreeman'> hamifreeman</option>
+          <option value='wigglle14'> wigglle14</option>
+          <option value='kamel'> kamel</option>
+          <option value='mesha'> mesha</option>
+       </select>
+   <input type='submit' value='submit'>
+                       </form> </body>
+                            </html>";
+
+
+
+foreach ($var as $index); {
+echo $index;
+echo "<br>";
+}
+
+print_r($var);
+echo $var2;
+
+
+ ?>
